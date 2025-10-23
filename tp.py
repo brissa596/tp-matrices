@@ -15,7 +15,7 @@ while True:
     fila = int(input("Ingrese la posición de la fila: "))
     columna = int(input("Ingrese la posición de la columna: "))
 
-    # Verificar si ya existe una celda con esa posición
+  
     existe = False
     for celda in matrizCeldas:
         if celda.fila == fila and celda.columna == columna:
@@ -29,13 +29,12 @@ while True:
         matrizCeldas.append(nueva_celda)
         print(" Celda agregada correctamente.\n")
 
-# Mostrar las celdas cargadas
-print("\n📋 Celdas cargadas:")
+
+print("\n Celdas cargadas:")
 for celd in matrizCeldas:
     print(f"Fila: {celd.fila}, Columna: {celd.columna}, Valor: {celd.valor}")
 
 
-# Función para buscar una celda por fila y columna
 def buscar_valor(fila, columna):
     for celda in matrizCeldas:
         if celda.fila == fila and celda.columna == columna:
@@ -43,7 +42,6 @@ def buscar_valor(fila, columna):
     return "La fila y columna indicada no ha sido asignada en ninguna celda"
 
 
-# Ejemplo de búsqueda
 print("\n Búsqueda de valor en la matriz")
 fila_buscar = int(input("Ingrese la fila a buscar: "))
 columna_buscar = int(input("Ingrese la columna a buscar: "))
